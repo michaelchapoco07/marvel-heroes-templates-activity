@@ -1,0 +1,26 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mainContainer {
+    display: block;
+    text-align: center;
+
+}
+
+#detailsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#heroId {
+    font-weight: bold;
+}
+
+#heroName{
+    font-weight: bold;
+}
+
+#titleName{
+    font-weight: bold;
+}
