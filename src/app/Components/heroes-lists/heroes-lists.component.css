@@ -5,22 +5,53 @@
 #mainContainer {
     display: block;
     text-align: center;
-
 }
+
 
 #detailsContainer {
     display: flex;
     justify-content: center;
+    margin-top: -25px;
 }
 
 #heroId {
     font-weight: bold;
+    color: red;
 }
 
 #heroName{
     font-weight: bold;
+    color: red;
 }
 
 #titleName{
     font-weight: bold;
+}
+
+#mainList{
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-right: 45px;
+}
+
+#badge{
+    background-color: rgb(61, 52, 52);
+    color: white;
+    width: 25px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+#mainButton {
+    width:155px;
+    text-align: start;
+    border-radius: 2px;
+}
+
+#secondContainer {
+    display: block;
+    text-align: center;
 }

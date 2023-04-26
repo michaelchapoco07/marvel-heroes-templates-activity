@@ -1,16 +1,35 @@
+
+<div id="secondContainer">
+    <h2>Heroes List</h2>
+    <ul id="thirdContainer">
+        <li *ngFor="let hero of heroes" id="mainList">
+            <div class="badge" id="badge">{{hero.id}}</div>
+            <button type="button" id="mainButton" (click)="onSelect(hero)">
+            <span class="name" id="heroName1">{{hero.name}}</span>
+            </button>
+            
+        </li>
+    </ul>
+</div>
+
 <div id="mainContainer">
     <h2>Hero Details</h2>
-    <div>
+    <div *ngIf="!selectedHero"><span>No hero currently selected</span></div>
+    <!-- <div>
         <label for="" id="titleName">Hero Name: </label>
         <input type="text" [(ngModel)]="hero.name">
 
-    </div>
+    </div> -->
     <br/>
-
-    <div id="detailsContainer">
-        <div ><span id="heroId">Id: </span>{{hero.id}}</div>
+    <div id="detailsContainer" *ngIf="selectedHero">
+        <div ><span id="heroId">Id: </span>{{selectedHero.id}}</div>
         <div>&nbsp; | &nbsp;</div>
-        <div><span id="heroName">Name: </span>{{hero.name}}</div>
+        <div><span id="heroName">Name: </span><input type="text" [(ngModel)]="selectedHero.name"></div>
+    </div>
 
+    <div id="detailsContainer" *ngIf="!selectedHero">
+        <div ><span id="heroId">Id: </span></div>
+        <div>&nbsp; | &nbsp;</div>
+        <div><span id="heroName">Name: </span></div>
     </div>
 </div>
